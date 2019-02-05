@@ -17,7 +17,7 @@ function caesarCipher(str, number) {
         }
     }
     return solved;
-}
+};
 
 
 function caesarDecipher(str, number) {
@@ -35,7 +35,4 @@ function caesarDecipher(str, number) {
         }
     }
     return solved;
-}
-
-caesarCipher("hola que hace", 8);
-caesarDecipher("`gdY(im](`Y[]", 8);
+};

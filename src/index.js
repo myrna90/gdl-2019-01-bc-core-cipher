@@ -26,9 +26,26 @@ function display(div1, div2) {
     }
 };
 
-function cifrar() {
+let string = ""
+let number = ""
 
-}
+document.getElementById("buttonCode").addEventListener("click", code);
 
-let offset
-let string
+function code() {
+    choosed = "buttonCode"
+    display("pantalla-3")
+};
+
+document.getElementById("buttonDecode").addEventListener("click", deCode);
+
+function deCode() {
+    choosed = "buttonDecode"
+    display("pantalla-3")
+};
+
+document.getElementById("buttonHelp").addEventListener("click", help);
+
+function help() {
+    choosed = "buttonHelp"
+    display("pantalla-2")
+};

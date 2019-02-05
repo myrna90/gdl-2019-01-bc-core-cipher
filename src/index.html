@@ -19,20 +19,20 @@
 
         <!--ingresar mensaje para cifrar y descifrar-->
 
-        <input type="text" name="mensaje" id="string">
+        <input type="text" name="mensaje" id="string" required>
 
         <!--botones para cifrar y descifrar-->
 
-        <button id="buttonCode" type="submit">cifrar</button>
+        <button id="buttonCode" type="submit" onclick="buttonCode()">cifrar</button>
 
-        <button id="buttonDecode" type="submit">descifrar</button>
+        <button id="buttonDecode" type="submit" onclick="buttondeCode()">descifrar</button>
 
 
         <!--boton para ingresar el numero de caracteres para desplazar-->
-        <input type="number" name="number-inicio" id="offset">
+        <input type="number" name="offset" id="number" required>
 
         <!--boton que muestra la pantalla 2 con las intrucciones-->
-        <button id="buttonHelp" type="submit">Ayuda</button>
+        <button id="buttonHelp" type="submit" onclick="buttonHelp()">Ayuda</button>
 
     </div>
 
@@ -80,4 +80,4 @@
     <script src="index.js"></script>
 </body>
 
-</html>s
+</html>
