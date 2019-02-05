@@ -10,71 +10,78 @@
 <body>
 
     <!--pantalla 1-->
+    <main>
 
-    <h1>CICE</h1>
+        <h1>CICE</h1>
 
-    <div id="pantalla-1">
+        <div id="pantalla-1">
 
-        <h2>"Ingresa tu mensaje"</h2>
+            <h2>"Ingresa tu mensaje"</h2>
 
-        <!--ingresar mensaje para cifrar y descifrar-->
+            <!--ingresar mensaje para cifrar y descifrar-->
 
-        <input type="text" name="mensaje" id="string" required>
+            <input type="text" name="mensaje" id="text" required>
 
-        <!--botones para cifrar y descifrar-->
+            <!--botones para cifrar y descifrar-->
 
-        <button id="buttonCode" type="submit" onclick="buttonCode()">cifrar</button>
+            <button id="buttonCode" type="submit">cifrar</button>
 
-        <button id="buttonDecode" type="submit" onclick="buttondeCode()">descifrar</button>
-
-
-        <!--boton para ingresar el numero de caracteres para desplazar-->
-        <input type="number" name="offset" id="number" required>
-
-        <!--boton que muestra la pantalla 2 con las intrucciones-->
-        <button id="buttonHelp" type="submit" onclick="buttonHelp()">Ayuda</button>
-
-    </div>
-
-    <!--pantalla 2-->
-
-    <div id="pantalla-2">
-        <h2>INSTRUCCIONES</h2>
-
-        <P>si deseas cifrar o descifras un mensaje sigue los siguientes pasos:</P>
-
-        <p>*ingresa tu mensaje en la pantalla que aparece al inicio.</p>
-
-        <p>*agrega el numero de caracteres(es el numero de espacios que deseas desplazar).</p>
-
-        <p>*oprime el boton de la accion que deseas realizar "cifrar" para encriptar tu mensaje y "descifrado' para desencriptar.</p>
-
-        <p>*guarda el numero de caracteres que ingresaste, ya que es necesario para poder descifrar tus mensajes.</p>
-
-        <p>*si deseas compartir tu cifrado con alguien necesitas enviarle el numero de caracteres con el cual se cifro el mensaje, asi esta persona podra descifrarlo ingresando el numero de caracteres que utilizaste.</p>
+            <button id="buttonDecode" type="submit">descifrar</button>
 
 
-    </div>
+            <!--boton para ingresar el numero de caracteres para desplazar-->
+            <input type="number" name="offset" id="caracter" required>
 
-    <!--pantalla 3-->
+            <!--boton que muestra la pantalla 2 con las intrucciones-->
+            <button id="buttonHelp" type="submit">Ayuda</button>
 
-    <div id="pantalla-3">
-        <div id="mensajeCifrado">
-            <h2>"Tu mensaje cifrado es:"</h2>
-
-            <input type="text" name="mensajeCifrado" id="messageCode">
         </div>
 
-        <div id="mensajeDescifrado">
-            <h2>"Tu mensaje descifrado es:"</h2>
+        <!--pantalla 2-->
 
-            <input type="text" name="mensajeDescifrado" id="messageDecode">
+        <div id="pantalla-2">
+            <h2>INSTRUCCIONES</h2>
+
+            <P>si deseas cifrar o descifras un mensaje sigue los siguientes pasos:</P>
+
+            <p>*ingresa tu mensaje en la pantalla que aparece al inicio.</p>
+
+            <p>*agrega el numero de caracteres(es el numero de espacios que deseas desplazar).</p>
+
+            <p>*oprime el boton de la accion que deseas realizar "cifrar" para encriptar tu mensaje y "descifrado' para desencriptar.</p>
+
+            <p>*guarda el numero de caracteres que ingresaste, ya que es necesario para poder descifrar tus mensajes.</p>
+
+            <p>*si deseas compartir tu cifrado con alguien necesitas enviarle el numero de caracteres con el cual se cifro el mensaje, asi esta persona podra descifrarlo ingresando el numero de caracteres que utilizaste.</p>
+
+
         </div>
 
-        <button id="buttonHome" type="submit">inicio</button>
+        <!--pantalla 3-->
 
-    </div>
+        <div id="pantalla-3">
+            <div id="mensajeCifrado">
+                <h2>"Tu mensaje cifrado es:"</h2>
 
+                <input type="text" name="mensajeCifrado" id="messageCode">
+            </div>
+
+            <button id="buttonHome" type="submit">inicio</button>
+
+        </div>
+
+        <!--pantalla 4-->
+        <div id="pantalla-4">
+            <div id="mensajeDescifrado">
+                <h2>"Tu mensaje descifrado es:"</h2>
+
+                <input type="text" name="mensajeDescifrado" id="messageDecode">
+            </div>
+
+            <button id="buttonHome" type="submit">inicio</button>
+
+        </div>
+    </main>
 
     <script src="cipher.js"></script>
     <script src="index.js"></script>

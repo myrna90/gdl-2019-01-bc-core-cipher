@@ -1,0 +1,19 @@
+body {
+    background-image: url("https://www.linuxadictos.com/wp-content/uploads/cifrado-portada.jpg");
+    image-resolution: 100%
+}
+
+main {
+    background-color: gray;
+    margin: auto;
+    width: 600px;
+    height: max-content;
+    text-align: center;
+    padding: 100px;
+}
+
+div {}
+
+h1 {
+    color: darkgreen;
+}
