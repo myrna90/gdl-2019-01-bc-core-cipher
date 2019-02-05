@@ -10,8 +10,6 @@ function caesarCipher(str, number) {
             solved += String.fromCharCode(asciiNum + 3);
         } else if (asciiNum >= 65 && asciiNum <= 90) {
             solved += String.fromCharCode(asciiNum + number);
-        } else if (asciiNum >= 97 && asciiNum <= 122) {
-            solved += String.fromCharCode(asciiNum - number);
         } else {
             solved += str[i];
         }
@@ -28,8 +26,6 @@ function caesarDecipher(str, number) {
             solved += String.fromCharCode(asciiNum - 3);
         } else if (asciiNum >= 65 && asciiNum <= 90) {
             solved += String.fromCharCode(asciiNum - number);
-        } else if (asciiNum >= 97 && asciiNum <= 122) {
-            solved += String.fromCharCode(asciiNum + number);
         } else {
             solved += str[i];
         }
