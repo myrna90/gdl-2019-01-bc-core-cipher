@@ -1,51 +1,44 @@
-//prende y apaga pantallas
-function reinicio() {
+//funcion boton para cifrar y mostrar mensaje
+function btnCifrar() {
+    let string = document.getElementById("text").value;
+    let offset = Number(document.getElementById("numero").value);
+    let cifrarMsj = window.cipher.encode(string, offset);
+    document.getElementById("messageEncode").innerHTML = cifrarMsj;
+}
+
+//llamar boton para cifrar
+document.getElementById("buttonEncode").addEventListener("click", btnCifrar);
+
+
+//funcion boton para descifrar y mostrar mensaje
+function btnDescifrar() {
+    let string = document.getElementById("text").value;
+    let offset = Number(document.getElementById("numero").value);
+    let descifrarMsj = window.cipher.decode(string, offset);
+    document.getElementById("messageDecode").innerHTML = descifrarMsj;
+}
+
+//llamar boton para descifrar
+document.getElementById("buttonDecode").addEventListener("click", btnDescifrar);
+
+
+//funcion para ocultar pantalla 1 y mostrar pantalla 2
+function displayHelp() {
+    document.getElementById("pantalla-2").style.display = "block";
+    document.getElementById("pantalla-1").style.display = "none";
+    document.getElementById("pantalla-3").style.display = "none";
+    document.getElementById("pantalla-4").style.display = "none";
+}
+//llamar boton ayuda
+document.getElementById("buttonHelp").addEventListener("click", displayHelp)
+
+
+//funcion para ocultar pantalla 2 y mostrar pantalla 1
+function displayVolver() {
+    document.getElementById("pantalla-1").style.display = "block";
     document.getElementById("pantalla-2").style.display = "none";
     document.getElementById("pantalla-3").style.display = "none";
     document.getElementById("pantalla-4").style.display = "none";
-};
-
-reinicio();
-
-//Funcion para "cambiar" de ventanas
-function display(div1, div2) {
-    let divElement = document.getElementById(div1);
-    let divElement2 = document.getElementById(div2);
-
-    //Ocultando la division del inicio
-    if (divElement.style.display == "none") {
-        divElement.style.display = "block";
-    } else {
-        divElement.style.display = "none";
-    }
-
-    //Mostrando la division del menu
-    if (divElement2.style.display == "none") {
-        divElement2.style.display = "block";
-    } else {
-        divElement2.style.display = "none";
-    }
-};
-
-
-document.getElementById("buttonCode").addEventListener("click", code);
-
-function code() {
-    choosed = "buttonCode"
-    display("pantalla-3")
-
-};
-
-document.getElementById("buttonDecode").addEventListener("click", deCode);
-
-function deCode() {
-    choosed = "buttonDecode"
-    display("pantalla-4")
-};
-
-document.getElementById("buttonHelp").addEventListener("click", help);
-
-function help() {
-    choosed = "buttonHelp"
-    display("pantalla-2")
-};
+}
+//llamar boton de volver instrucciones
+document.getElementById("buttonVolver").addEventListener("click", displayVolver)
