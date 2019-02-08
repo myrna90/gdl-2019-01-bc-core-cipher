@@ -30,7 +30,7 @@ function displayHelp() {
     document.getElementById("pantalla-4").style.display = "none";
 }
 //llamar boton ayuda
-document.getElementById("buttonHelp").addEventListener("click", displayHelp)
+document.getElementById("buttonHelp").addEventListener("click", displayHelp);
 
 
 //funcion para ocultar pantalla 2 y mostrar pantalla 1
@@ -41,4 +41,4 @@ function displayVolver() {
     document.getElementById("pantalla-4").style.display = "none";
 }
 //llamar boton de volver instrucciones
-document.getElementById("buttonVolver").addEventListener("click", displayVolver)
+document.getElementById("buttonVolver").addEventListener("click", displayVolver);
