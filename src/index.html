@@ -16,7 +16,6 @@
 
         <div id="pantalla-1">
 
-
             <!--ingresar mensaje para cifrar y descifrar-->
             <h2>"Ingresa tu mensaje"</h2>
 
@@ -24,8 +23,6 @@
 
             <p>*el texto se debe ingresar en letras Mayúsculas</p>
 
-            <!--boton que muestra la pantalla 2 con las intrucciones-->
-            <button id="buttonHelp" type="submit">Ayuda</button>
 
 
             <!--boton para ingresar el numero de caracteres para desplazar-->
@@ -33,25 +30,40 @@
             <input id="numero" type="number">
 
 
-            <!--botones para cifrar y descifrar-->
+
+            <!--botones para cifrar-->
 
             <button id="buttonEncode">cifrar</button>
 
-            <button id="buttonDecode" type="submit">descifrar</button>
-
-
-
             <!--cuadro de texto donde aparace el mensaje cifrado-->
-            <h2>"Tu mensaje cifrado es:"</h2>
+            <div id="cuadroCifrado">
 
-            <textarea id="messageEncode" name="mensajeCifrado" cols="30" rows="10"></textarea>
+                <h2>"Tu mensaje cifrado es:"</h2>
+
+                <textarea id="messageEncode" name="mensajeCifrado" cols="30" rows="10"></textarea>
+            </div>
 
 
+
+            <!--boton de descifrar-->
+            <button id="buttonDecode">descifrar</button>
 
             <!--cuadro de texto donde aparece el mensaje descifrado-->
-            <h2>"Tu mensaje descifrado es:"</h2>
+            <div id="cuadroDescifrado">
 
-            <textarea id="messageDecode" name="mensajeDcifrado" cols="30" rows="10"></textarea>
+                <h2>"Tu mensaje descifrado es:"</h2>
+
+                <textarea id="messageDecode" name="mensajeDcifrado" cols="30" rows="10"></textarea>
+            </div>
+
+
+
+            <!--boton para reiniciar sistema-->
+            <button id="btnClean" type="reset">Limpiar</button>
+
+            <!--boton que muestra la pantalla 2 con las intrucciones-->
+            <button id="buttonHelp" type="submit">Ayuda</button>
+
 
         </div>
 

@@ -28,6 +28,8 @@ aplicación en el sistema ROT13.
 
 ### Definición del producto
 
+Nuestra app maneja un sistema basado en el lenguaje de Java Script.
+
 “Encrypt Corp” es una app, que está dirigida a empresas las cuales requieren un medio de mensajería seguro y confidencial.
 
 En estos casos un mensaje encriptado es su mejor opción.
@@ -51,4 +53,3 @@ El espacio que permite ingresar un desplazamiento no limita al usuario para ingr
 
 Tambien le ofrecemos al usuario una seccion de ayuda, para aquellos que no tienen experiencia con la app, la cual explica la forma de uso de esta.
 
-Nuestra app maneja un sistema basado en el lenguaje de Java Script.

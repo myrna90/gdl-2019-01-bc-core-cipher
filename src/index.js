@@ -4,6 +4,7 @@ function btnCifrar() {
     let offset = Number(document.getElementById("numero").value);
     let cifrarMsj = window.cipher.encode(string, offset);
     document.getElementById("messageEncode").innerHTML = cifrarMsj;
+
 }
 
 //llamar boton para cifrar
@@ -27,7 +28,6 @@ function displayHelp() {
     document.getElementById("pantalla-2").style.display = "block";
     document.getElementById("pantalla-1").style.display = "none";
     document.getElementById("pantalla-3").style.display = "none";
-    document.getElementById("pantalla-4").style.display = "none";
 }
 //llamar boton ayuda
 document.getElementById("buttonHelp").addEventListener("click", displayHelp);
@@ -38,7 +38,13 @@ function displayVolver() {
     document.getElementById("pantalla-1").style.display = "block";
     document.getElementById("pantalla-2").style.display = "none";
     document.getElementById("pantalla-3").style.display = "none";
-    document.getElementById("pantalla-4").style.display = "none";
 }
 //llamar boton de volver instrucciones
 document.getElementById("buttonVolver").addEventListener("click", displayVolver);
+
+//funcion para limpiar el formulario
+function clean() {
+    location.reload();
+}
+
+document.getElementById("btnClean").addEventListener("click", clean);
