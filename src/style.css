@@ -10,69 +10,36 @@ main {
     width: 1000px;
     text-align: center;
     margin: auto;
-    height: 900px;
+    height: 700px;
 }
 
 #text {
     width: 300px;
     height: 3cm;
+    opacity: 0.7;
 }
 
 #numero {
     width: 50px;
     height: 40px;
     align-self: auto;
+    opacity: 0.9;
 }
 
 #cuadroCifrado {
     background-position: left;
     float: left;
-    width: 200px;
+    width: 400px;
     margin: left;
+    opacity: 0.7;
 }
 
-#cuadroDecifrado {
+#cuadroDescifrado {
     background-position: right;
     float: right;
-    width: 200px;
-    margin: 800px;
-}
-
-h1 {
-    color: darkblue;
-    size: 2cm;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-}
-
-h2 {
-    color: rgb(0, 26, 255);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-h3 {
-    color: rgb(0, 26, 255);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-p {
-    color: maroon;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-#pantalla-2 {
-    height: 400px;
-}
-
-#buttonVolver {
-    text-decoration: none;
-    padding: 5px;
-    font-weight: 600;
-    font-size: 20px;
-    color: #ffffff;
-    background-color: #1883ba;
-    border-radius: 6px;
-    border: 2px solid #0016b0;
+    width: 400px;
+    margin: right;
+    opacity: 0.7;
 }
 
 #buttonEncode {
@@ -85,7 +52,7 @@ p {
     border-radius: 6px;
     border: 2px solid #0016b0;
     float: left;
-    margin: auto;
+    margin: left;
 }
 
 #buttonDecode {
@@ -98,22 +65,68 @@ p {
     border-radius: 6px;
     border: 2px solid #0016b0;
     float: right;
-    margin: auto;
+    margin: right;
 }
 
 #buttonHelp {
     text-decoration: none;
     padding: 5px;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 20px;
     color: #ffffff;
     background-color: #1883ba;
     border-radius: 6px;
     border: 2px solid #0016b0;
-    float: right;
+    float: center;
+    margin: left;
 }
 
 #btnClean {
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+    float: center;
+    margin: right;
+}
+
+h1 {
+    color: darkblue;
+    size: 2cm;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(0, 26, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-self: auto;
+}
+
+h3 {
+    color: rgb(0, 26, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-self: auto;
+}
+
+p {
+    color: maroon;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    align-self: auto;
+}
+
+#pantalla-2 {
+    height: 300px;
+    text-align: left;
+    text-justify: auto;
+    margin: 100px;
+}
+
+#buttonVolver {
     text-decoration: none;
     padding: 5px;
     font-weight: 600;
@@ -122,5 +135,4 @@ p {
     background-color: #1883ba;
     border-radius: 6px;
     border: 2px solid #0016b0;
-    float: left;
 }

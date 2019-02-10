@@ -27,7 +27,7 @@ document.getElementById("buttonDecode").addEventListener("click", btnDescifrar);
 function displayHelp() {
     document.getElementById("pantalla-2").style.display = "block";
     document.getElementById("pantalla-1").style.display = "none";
-    document.getElementById("pantalla-3").style.display = "none";
+
 }
 //llamar boton ayuda
 document.getElementById("buttonHelp").addEventListener("click", displayHelp);
@@ -37,7 +37,6 @@ document.getElementById("buttonHelp").addEventListener("click", displayHelp);
 function displayVolver() {
     document.getElementById("pantalla-1").style.display = "block";
     document.getElementById("pantalla-2").style.display = "none";
-    document.getElementById("pantalla-3").style.display = "none";
 }
 //llamar boton de volver instrucciones
 document.getElementById("buttonVolver").addEventListener("click", displayVolver);

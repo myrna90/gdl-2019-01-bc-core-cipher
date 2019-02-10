@@ -24,16 +24,18 @@
             <p>*el texto se debe ingresar en letras Mayúsculas</p>
 
 
-
             <!--boton para ingresar el numero de caracteres para desplazar-->
-            <h3>"Ingresa el numero de desplazamiento"</h3>
-            <input id="numero" type="number">
+            <aside>
+                <h3>"Ingresa el numero de desplazamiento"</h3>
+                <input id="numero" type="number">
 
+            </aside>
 
 
             <!--botones para cifrar-->
 
             <button id="buttonEncode">cifrar</button>
+
 
             <!--cuadro de texto donde aparace el mensaje cifrado-->
             <div id="cuadroCifrado">
@@ -43,11 +45,8 @@
                 <textarea id="messageEncode" name="mensajeCifrado" cols="30" rows="10"></textarea>
             </div>
 
-
-
             <!--boton de descifrar-->
             <button id="buttonDecode">descifrar</button>
-
             <!--cuadro de texto donde aparece el mensaje descifrado-->
             <div id="cuadroDescifrado">
 
@@ -55,28 +54,24 @@
 
                 <textarea id="messageDecode" name="mensajeDcifrado" cols="30" rows="10"></textarea>
             </div>
-
-
+            <!--boton que muestra la pantalla 2 con las intrucciones-->
+            <button id="buttonHelp" type="submit">Ayuda</button>
 
             <!--boton para reiniciar sistema-->
             <button id="btnClean" type="reset">Limpiar</button>
 
-            <!--boton que muestra la pantalla 2 con las intrucciones-->
-            <button id="buttonHelp" type="submit">Ayuda</button>
-
-
         </div>
-
 
 
         <!--pantalla 2-->
 
-        <div id="pantalla-2" style="display: none;">
-            <h2>INSTRUCCIONES</h2>
+        <div id="pantalla-2" style="display: none">
 
-            <p>si deseas cifrar o descifras un mensaje sigue los siguientes pasos:</p>
+            <h2>Instrucciones</h2>
 
-            <p>*ingresa tu mensaje en la pantalla que aparece al inicio.</p>
+            <p>deseas cifrar o descifras un mensaje sigue los siguientes pasos:</p>
+
+            <p> *ingresa tu mensaje en la pantalla que aparece al inicio.</p>
 
             <p>*agrega el numero de caracteres(es el numero de espacios que deseas desplazar).</p>
 
@@ -86,9 +81,9 @@
 
             <p>*si deseas compartir tu cifrado con alguien necesitas enviarle el numero de caracteres con el cual se cifro el mensaje, asi esta persona podra descifrarlo ingresando el numero de caracteres que utilizaste.</p>
 
-            <button id="buttonVolver" type="submit">Volver</button>
-
+            <button id="buttonVolver">volver</button>
         </div>
+
 
     </main>
 
