@@ -47,7 +47,7 @@ Esta aplicación te muestra un panorama más seguro y confiable para la informac
 Dentro de la app encontraran dos opciones: 
 
 *la primera les permite encriptar un mensaje, para que su lectura no sea comprencible para otros usuarios. 
-*la segunda les permite desencriptar el mensaje encrptado que te envia otro usuario.
+*la segunda les permite desencriptar el mensaje previo.
 
 El espacio que permite ingresar un desplazamiento no limita al usuario para ingresar el numero de caracteres que el quiera utilizar.
 
